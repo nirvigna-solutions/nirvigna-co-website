@@ -1,6 +1,9 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/config/site";
 
+// Static export (Netlify): generate this file once at build time.
+export const dynamic = "force-static";
+
 // Fixed date so the sitemap is built once at build time; bump it when content changes.
 const lastModified = new Date("2026-11-04");
 

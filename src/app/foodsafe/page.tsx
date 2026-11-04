@@ -13,40 +13,41 @@ import { ButtonLink, CheckList, Container, CtaBand, Faq, FeatureCard, PageHero, 
 
 export const metadata: Metadata = pageMetadata({
   title: "Nirvigna FoodSafe — food-safety compliance for food businesses",
-  description: "FSSAI registration and licence support, daily hygiene and temperature checklists, inspection-ready records, staff training tracking and self-audit reports for Indian food businesses.",
+  description:
+    "Daily hygiene and temperature checklists on mobile, plus expert support from our team for FSSAI registration and renewals, staff training and medical fitness, pest control, water testing and self-audits — for Indian food businesses.",
   path: "/foodsafe",
 });
 
 const features = [
   {
-    icon: FileCheck,
-    title: "FSSAI registration & licence support",
-    text: "Help with your FSSAI registration or licence application, and reminders well before renewal is due.",
-  },
-  {
     icon: Thermometer,
     title: "Daily hygiene & temperature checklists",
-    text: "Simple digital checklists your staff fill in on a mobile phone — cleaning, personal hygiene, storage and temperature logs.",
+    text: "Simple digital checklists your staff fill in on a mobile phone — tick items, take photos in the app and record temperatures.",
   },
   {
     icon: Folder,
-    title: "Food safety records & audit trail",
-    text: "Every checklist, record and correction is saved with date and time, so your records are complete and ready for inspection.",
+    title: "Checklist records with date and time",
+    text: "Every checklist answer, failed item and fix is saved with date and time, so your daily records are complete.",
+  },
+  {
+    icon: FileCheck,
+    title: "FSSAI registration & licence support",
+    text: "Our team helps with your FSSAI registration or licence application, keeps track of your renewal date and reminds you well before it is due.",
   },
   {
     icon: GraduationCap,
-    title: "Staff training & medical fitness",
-    text: "Track food-handler training and medical-fitness records for each staff member, with reminders when they are due again.",
+    title: "Staff training & medical fitness support",
+    text: "Our team helps you keep food-handler training and medical-fitness records up to date, and tells you when they are due again.",
   },
   {
     icon: Droplet,
-    title: "Pest control, water testing & cleaning",
-    text: "Reminders for scheduled pest control, water testing and deep cleaning, with a place to keep the reports.",
+    title: "Pest control, water testing & cleaning support",
+    text: "Our team helps you plan pest control, water testing and deep cleaning, and keep the reports in order.",
   },
   {
     icon: ClipboardCheck,
-    title: "Self-audit reports with action points",
-    text: "Run regular self-audits and get a clear list of what to fix, who should fix it and by when.",
+    title: "Self-audits with action points",
+    text: "Our team runs regular self-audits with you and gives you a clear list of what to fix, who should fix it and by when.",
   },
 ];
 
@@ -66,7 +67,7 @@ const steps = [
   },
   {
     title: "We set up your checklists",
-    text: "We configure daily checklists, schedules and reminders for your outlets, and add your existing certificates.",
+    text: "We set up daily checklists for your outlets. Our team notes your certificate and renewal dates so we can remind you in time.",
   },
   {
     title: "Your team logs every day",
@@ -93,7 +94,7 @@ const faq = [
   },
   {
     q: "Can I manage multiple outlets?",
-    a: "Yes. You can see checklists, records and reminders for each outlet separately, or get an overview across all your outlets.",
+    a: "Yes. Each outlet has its own daily checklists and records, and our team supports each of your outlets.",
   },
 ];
 
@@ -103,7 +104,7 @@ export default function FoodSafePage() {
       <PageHero
         eyebrow="Nirvigna FoodSafe"
         title="Food-safety compliance, made simple for food businesses"
-        intro="Daily checklists, organised records and timely reminders — so your kitchen stays inspection-ready and your FSSAI paperwork never falls behind."
+        intro="Daily checklists on mobile, plus an expert team that keeps track of your FSSAI paperwork and reminds you of what is due — so your kitchen stays inspection-ready."
       >
         <ButtonLink href="/contact">
           Request a demo <ArrowRight className="h-5 w-5" />
@@ -129,7 +130,7 @@ export default function FoodSafePage() {
           <SectionHeading
             eyebrow="Who it's for"
             title="Made for every kind of food business"
-            intro="Whether you run one kitchen or many outlets, FoodSafe helps your team follow good hygiene practices and keep the records to show it."
+            intro="Whether you run one kitchen or many outlets, FoodSafe and our team help your staff follow good hygiene practices and keep the records to show it."
           />
           <div className="rounded-2xl border border-slate-200 bg-white p-8">
             <CheckList items={audience} />

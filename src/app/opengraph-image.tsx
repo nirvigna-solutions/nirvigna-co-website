@@ -1,6 +1,9 @@
 import { ImageResponse } from "next/og";
 import { site } from "@/config/site";
 
+// Static export (Netlify): generate this file once at build time.
+export const dynamic = "force-static";
+
 export const alt = `${site.brand} — ${site.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

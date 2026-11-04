@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Build a plain static site into the `out` folder; Netlify serves it as files,
+  // so no server, functions or Next.js runtime plugin is needed.
+  output: "export",
   turbopack: {
     rules: {
       "*.css": {

@@ -5,40 +5,41 @@ import { ButtonLink, CheckList, Container, CtaBand, Faq, FeatureCard, PageHero, 
 
 export const metadata: Metadata = pageMetadata({
   title: "Nirvigna Cloud Compliance — labour-law and business compliance",
-  description: "Compliance calendar, licence tracker, Labour Codes compliance, digital registers and a document vault with expiry alerts — cloud tools with expert support for Indian businesses.",
+  description:
+    "A licence and registration register with a compliance health view, plus expert support from our team for renewals, returns, Labour Codes compliance and inspection-ready records — for Indian businesses.",
   path: "/cloud-compliance",
 });
 
 const features = [
   {
-    icon: Calendar,
-    title: "Compliance calendar with reminders",
-    text: "Every return, renewal and filing that applies to you, in one calendar — with automatic reminders before each due date.",
-  },
-  {
     icon: FileCheck,
-    title: "Licence & registration tracker",
-    text: "Track Shops & Establishments, Factories, Contract Labour, Trade licence, Fire NOC and more — with status and renewal dates at a glance.",
-  },
-  {
-    icon: Scale,
-    title: "Labour law under the new Labour Codes",
-    text: "Stay on top of wages, social security (PF/ESI), industrial relations and occupational safety requirements under India's four Labour Codes.",
-  },
-  {
-    icon: Folder,
-    title: "Digital registers and records",
-    text: "Maintain registers and records digitally, organised and ready to show during an inspection.",
-  },
-  {
-    icon: Bell,
-    title: "Document vault with expiry alerts",
-    text: "Store certificates and licences securely in one place. Get alerted before any of them expire.",
+    title: "Licence & registration register",
+    text: "See Shops & Establishments, Factories, Contract Labour, Trade licence, Fire NOC and more in one register — with status and expiry dates at a glance.",
   },
   {
     icon: BarChart,
-    title: "Monthly compliance health report",
-    text: "A simple monthly summary of what is done, what is due and what needs your attention.",
+    title: "Compliance health view",
+    text: "One screen that shows which licences are active, which are expiring soon and which have expired.",
+  },
+  {
+    icon: Calendar,
+    title: "Due-date tracking by our team",
+    text: "Our team keeps track of the returns, renewals and filings that apply to you, and reminds you before each due date.",
+  },
+  {
+    icon: Scale,
+    title: "Expert support under the new Labour Codes",
+    text: "Our team helps you understand and meet your duties on wages, social security (PF/ESI), industrial relations and occupational safety under India's four Labour Codes.",
+  },
+  {
+    icon: Folder,
+    title: "Help with registers and records",
+    text: "Our team guides you on the registers and records you must keep, so they are complete and ready to show during an inspection.",
+  },
+  {
+    icon: Bell,
+    title: "Monthly compliance review",
+    text: "Each month, our team reviews your compliance with you and shares a simple summary of what is done, what is due and what needs your attention.",
   },
 ];
 
@@ -58,18 +59,18 @@ const steps = [
   },
   {
     title: "We set up your compliance map",
-    text: "We list the licences, registrations, returns and registers that apply, and load your existing documents and due dates.",
+    text: "We list the licences, registrations, returns and registers that apply, and add your existing licences and their expiry dates to your register.",
   },
   {
     title: "Stay compliant every month",
-    text: "Get reminders, keep records up to date and review your monthly health report — with our team available when you need help.",
+    text: "Check your register any time. Our team reminds you before due dates, reviews your compliance with you each month and helps when you need it.",
   },
 ];
 
 const faq = [
   {
     q: "Which laws does Nirvigna Cloud Compliance cover?",
-    a: "It covers common labour-law and business compliance for Indian businesses — including the Labour Codes (wages, social security such as PF and ESI, industrial relations, and occupational safety), Shops & Establishments, Factories, Contract Labour, trade licences and Fire NOC. What applies to you depends on your business type, size and state; we map this during onboarding.",
+    a: "The register covers common business licences and registrations — such as Shops & Establishments, Factories, Contract Labour, trade licences and Fire NOC. For the Labour Codes (wages, social security such as PF and ESI, industrial relations, and occupational safety), our team gives you expert support. What applies to you depends on your business type, size and state; we map this during onboarding.",
   },
   {
     q: "Do I need any technical knowledge to use it?",
@@ -81,7 +82,7 @@ const faq = [
   },
   {
     q: "Can I manage more than one location?",
-    a: "Yes. You can track licences, registrations and deadlines for each of your locations from a single account.",
+    a: "Yes. You can add each of your locations, and our team helps you keep track of the licences and deadlines for each one.",
   },
   {
     q: "How is my data protected?",
@@ -95,7 +96,7 @@ export default function CloudCompliancePage() {
       <PageHero
         eyebrow="Nirvigna Cloud Compliance"
         title="Labour-law and business compliance, handled in one place"
-        intro="A cloud platform with expert support that keeps your licences, registrations, returns and registers on track — so you can focus on running your business."
+        intro="A cloud register of your licences and registrations, backed by an expert team that tracks your renewals, returns and records with you — so you can focus on running your business."
       >
         <ButtonLink href="/contact">
           Request a demo <ArrowRight className="h-5 w-5" />
@@ -121,7 +122,7 @@ export default function CloudCompliancePage() {
           <SectionHeading
             eyebrow="Who it's for"
             title="Made for businesses that employ people"
-            intro="If you run a business with workers, you have registrations to keep, returns to file and registers to maintain. Nirvigna Cloud Compliance brings it all together."
+            intro="If you run a business with workers, you have registrations to keep, returns to file and registers to maintain. Nirvigna Cloud Compliance and our team help you keep it all in order."
           />
           <div className="rounded-2xl border border-slate-200 bg-white p-8">
             <CheckList items={audience} />

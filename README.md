@@ -1,12 +1,14 @@
 # Nirvigna website (nirvigna.co)
 
 Company website for Nirvigna Cloud Compliance Private Limited. Built with Next.js, TypeScript and
-Tailwind CSS. Fully static: no database, no login, no paid services. Hosted on Vercel.
+Tailwind CSS. Fully static: no database, no login, no paid services. Hosted on Netlify (free plan):
+`npm run build` writes the finished site to the `out` folder, and `netlify.toml` tells Netlify to
+publish that folder.
 
 ## Change company details
 
 All company details (email, phone, WhatsApp, address, CIN, GSTIN, domain, business hours) are in
-**one file**: `src/config/site.ts`. Edit the value, save, commit and push. Vercel redeploys
+**one file**: `src/config/site.ts`. Edit the value, save, commit and push. Netlify redeploys
 automatically.
 
 - **GSTIN:** it is empty for now and hidden everywhere. Put the number between the quotes
@@ -36,6 +38,8 @@ of that file, and the date in `src/app/sitemap.ts`.
 npm install      # first time only
 npm run dev      # then open http://localhost:3000
 ```
+
+To preview the exact files Netlify will publish: `npm run build`, then `npx serve out`.
 
 Before pushing a change, check the production build works:
 

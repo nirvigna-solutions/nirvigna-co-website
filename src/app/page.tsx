@@ -24,9 +24,9 @@ const productCards = [
     icon: Building,
     summary: "Cloud platform and expert support for labour-law and business compliance.",
     benefits: [
-      "One calendar for every return, renewal and filing",
-      "Track all licences and registrations with expiry alerts",
-      "Digital registers and records, ready for inspection",
+      "See every licence and registration, with its expiry date, in one register",
+      "Our team tracks your renewal and filing dates and reminds you in time",
+      "Expert help to keep your records ready for inspection",
     ],
   },
   {
@@ -35,9 +35,9 @@ const productCards = [
     icon: Utensils,
     summary: "Food-safety compliance for restaurants, kitchens and food businesses.",
     benefits: [
-      "FSSAI registration and licence support with renewal reminders",
+      "FSSAI registration and licence support, with our team tracking your renewal date",
       "Daily hygiene and temperature checklists on mobile",
-      "Food safety records and audit trail, ready for inspection",
+      "Checklist answers and fixes saved with date and time",
     ],
   },
 ];
@@ -46,17 +46,17 @@ const whyPoints = [
   {
     icon: Layers,
     title: "All compliance in one place",
-    text: "Licences, registrations, returns and records sit together in one dashboard instead of many files, portals and folders.",
+    text: "Your licences and registrations sit together in one register instead of many files, portals and folders.",
   },
   {
     icon: Bell,
     title: "Reminders before due dates",
-    text: "Get alerts well before a renewal or filing is due, so nothing slips and you avoid late fees and penalties.",
+    text: "Our team keeps track of your renewal and filing dates and reminds you well before they are due, so nothing slips.",
   },
   {
     icon: ClipboardCheck,
     title: "Inspection-ready records",
-    text: "Keep registers, certificates and checklists organised and easy to show when an inspector visits.",
+    text: "With our team's help, keep certificates, checklists and records organised and easy to show when an inspector visits.",
   },
   {
     icon: Map,
@@ -76,7 +76,7 @@ const steps = [
   },
   {
     title: "Track, renew and file on time",
-    text: "Use one dashboard to see what is due, get reminders, store documents and keep records up to date.",
+    text: "See your licences and their status in one place. Our team reminds you before each renewal or filing and helps you keep documents up to date.",
   },
 ];
 
@@ -128,8 +128,8 @@ export default function Home() {
                   ["Shops & Establishments registration", "Active", "bg-accent-100 text-accent-700"],
                   ["Trade licence renewal", "Due in 30 days", "bg-amber-100 text-amber-800"],
                   ["FSSAI licence", "Active", "bg-accent-100 text-accent-700"],
-                  ["Monthly PF / ESI filing", "Reminder set", "bg-navy-100 text-navy-800"],
-                  ["Fire NOC", "Documents ready", "bg-navy-100 text-navy-800"],
+                  ["Contract Labour licence", "Active", "bg-accent-100 text-accent-700"],
+                  ["Fire NOC", "Expired", "bg-red-100 text-red-800"],
                 ].map(([label, state, tone]) => (
                   <li key={label} className="flex items-center justify-between gap-3 rounded-lg bg-slate-50 px-3 py-2.5">
                     <span className="text-slate-700">{label}</span>

@@ -54,9 +54,10 @@ export default function AboutPage() {
                 and a single missed date can mean penalties or disruption.
               </p>
               <p>
-                Nirvigna was founded to make compliance simple. We bring everything a business must
-                do into one place, remind owners before things are due, and keep records ready for
-                inspection — backed by people who understand Indian compliance.
+                Nirvigna was founded to make compliance simple. We bring a business&apos;s licences and
+                registrations into one place, and our team — people who understand Indian
+                compliance — reminds owners before things are due and helps keep records ready for
+                inspection.
               </p>
             </div>
           </div>
