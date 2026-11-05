@@ -49,7 +49,7 @@ export default function AboutPage() {
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-slate-600">
               <p>
                 Running a business in India means dealing with many separate laws, government portals
-                and deadlines — licences, registrations, labour-law returns, food-safety records and
+                and deadlines — licences, registrations, returns, food-safety records and
                 inspections. For a small or medium business, keeping track of all of this is hard,
                 and a single missed date can mean penalties or disruption.
               </p>

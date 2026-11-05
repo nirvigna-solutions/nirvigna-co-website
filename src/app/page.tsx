@@ -22,7 +22,7 @@ const productCards = [
     name: "Nirvigna Cloud Compliance",
     href: "/cloud-compliance",
     icon: Building,
-    summary: "Cloud platform and expert support for labour-law and business compliance.",
+    summary: "Cloud platform and expert support for licence and business compliance.",
     benefits: [
       "See every licence and registration, with its expiry date, in one register",
       "Our team tracks your renewal and filing dates and reminds you in time",

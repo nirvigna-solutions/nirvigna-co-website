@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/config/seo";
-import { ArrowRight, BarChart, Bell, Calendar, FileCheck, Folder, Scale } from "@/components/icons";
+import { ArrowRight, BarChart, Bell, Calendar, FileCheck, Folder } from "@/components/icons";
 import { ButtonLink, CheckList, Container, CtaBand, Faq, FeatureCard, PageHero, SectionHeading, Steps } from "@/components/ui";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Nirvigna Cloud Compliance — labour-law and business compliance",
+  title: "Nirvigna Cloud Compliance — licence and business compliance",
   description:
-    "A licence and registration register with a compliance health view, plus expert support from our team for renewals, returns, Labour Codes compliance and inspection-ready records — for Indian businesses.",
+    "A licence and registration register with a compliance health view, plus expert support from our team for renewals, returns and inspection-ready records — for Indian businesses.",
   path: "/cloud-compliance",
 });
 
@@ -25,11 +25,6 @@ const features = [
     icon: Calendar,
     title: "Due-date tracking by our team",
     text: "Our team keeps track of the returns, renewals and filings that apply to you, and reminds you before each due date.",
-  },
-  {
-    icon: Scale,
-    title: "Expert support under the new Labour Codes",
-    text: "Our team helps you understand and meet your duties on wages, social security (PF/ESI), industrial relations and occupational safety under India's four Labour Codes.",
   },
   {
     icon: Folder,
@@ -70,7 +65,7 @@ const steps = [
 const faq = [
   {
     q: "Which laws does Nirvigna Cloud Compliance cover?",
-    a: "The register covers common business licences and registrations — such as Shops & Establishments, Factories, Contract Labour, trade licences and Fire NOC. For the Labour Codes (wages, social security such as PF and ESI, industrial relations, and occupational safety), our team gives you expert support. What applies to you depends on your business type, size and state; we map this during onboarding.",
+    a: "The register covers common business licences and registrations — such as Shops & Establishments, Factories, Contract Labour, trade licences and Fire NOC. What applies to you depends on your business type, size and state; we map this during onboarding.",
   },
   {
     q: "Do I need any technical knowledge to use it?",
@@ -95,7 +90,7 @@ export default function CloudCompliancePage() {
     <>
       <PageHero
         eyebrow="Nirvigna Cloud Compliance"
-        title="Labour-law and business compliance, handled in one place"
+        title="Licence and business compliance, handled in one place"
         intro="A cloud register of your licences and registrations, backed by an expert team that tracks your renewals, returns and records with you — so you can focus on running your business."
       >
         <ButtonLink href="/contact">
